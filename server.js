@@ -18,6 +18,7 @@ app.post('/gpt', async (req, res) => {
       headers: {
         'Authorization': `Bearer ${OPENAI_API_KEY}`,
         'Content-Type': 'application/json'
+        'OpenAI-Project': 'proj_j6ok3WQsHdHMCg0Wsh0jPtF1'
       },
       body: JSON.stringify({
         model: 'gpt-3.5-turbo',
