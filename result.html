@@ -27,6 +27,11 @@
   }
 
 function handleGPT() {
+  if (typeof interpret === 'function') {
+      interpret();
+    } else {
+      alert("⚠️ GPT 解签功能加载失败，请稍后重试");
+    }
   // const today = new Date().toISOString().split("T")[0];
  // const usedDate = localStorage.getItem("used_date");
 
