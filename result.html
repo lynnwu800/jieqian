@@ -12,6 +12,7 @@
     <button onclick="handleGPT()">GPT 解签</button>
     <div id="interpretation" style="white-space: pre-wrap; margin-top: 20px;"></div>
   </div>
+ <script src="ai-helper.js"></script>
 <script>
   function loadFortune() {
     const fortuneData = sessionStorage.getItem('fortune');
@@ -41,6 +42,5 @@ function handleGPT() {
   window.onload = loadFortune;
 </script>
 
-  <script src="ai-helper.js"></script>
 </body>
 </html>
