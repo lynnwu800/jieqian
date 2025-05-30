@@ -8,8 +8,8 @@
 <body>
   <div class="container">
     <h2>您抽到的签是：</h2>
-    <div id="fortuneText"></div>
-    <button onclick="handleGPT()">GPT 解签</button>
+    <div id="fortuneText" style="font-size: 1.2rem;"></div>
+    <button id="gptBtn">GPT 解签</button>
     <div id="interpretation" style="white-space: pre-wrap; margin-top: 20px;"></div>
   </div>
 
@@ -47,15 +47,7 @@ function handleGPT() {
   // 页面加载时立即执行
   window.onload = function () {
       loadFortune();
-
-      const btn = document.getElementById("gptBtn");
-      btn.addEventListener("click", () => {
-        if (typeof interpret === 'function') {
-          interpret();
-        } else {
-          alert("⚠️ GPT 解签功能加载失败，请稍后重试");
-        }
-      });
+      document.getElementById("gptBtn").addEventListener("click", handleGPT); 
     };
 </script>
  
