@@ -1,16 +1,33 @@
-
 body {
   font-family: sans-serif;
-  background: #fdf6e3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  font-size: 18px;
+  padding: 20px;
+  line-height: 1.6;
 }
+
+/* 容器样式 */
 .container {
+  max-width: 600px;
+  margin: 0 auto;
   text-align: center;
 }
+
+/* 按钮样式 */
 button {
-  padding: 10px 20px;
   font-size: 18px;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+/* 移动端优化 */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  button {
+    font-size: 20px;
+    padding: 12px 24px;
+  }
 }
