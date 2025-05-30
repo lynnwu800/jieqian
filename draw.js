@@ -5,5 +5,5 @@ function drawFortune() {
   sessionStorage.setItem('fortune', JSON.stringify(random));
   setTimeout(() => {
   window.location.href = "result.html";
-}, 100);
+}, 300);
 }
