@@ -27,15 +27,15 @@
   }
 
 function handleGPT() {
-  const today = new Date().toISOString().split("T")[0];
-  const usedDate = localStorage.getItem("used_date");
+  //const today = new Date().toISOString().split("T")[0];
+ // const usedDate = localStorage.getItem("used_date");
 
-  if (usedDate === today) {
-    alert("⚠️ 你今天已经解过签了，请明天再来哦！");
-    return;
+ // if (usedDate === today) {
+  //  alert("⚠️ 你今天已经解过签了，请明天再来哦！");
+ //   return;
   }
 
-  localStorage.setItem("used_date", today);
+//  localStorage.setItem("used_date", today);
   interpret(); // 继续执行 GPT 解签逻辑
 }
 
