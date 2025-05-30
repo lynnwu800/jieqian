@@ -1,0 +1,16 @@
+
+body {
+  font-family: sans-serif;
+  background: #fdf6e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  text-align: center;
+}
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+}
